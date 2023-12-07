@@ -9,6 +9,7 @@ let age = 18
 
 let isLoggedIn = false // this boolean type
 
+//dataTypes in javaScript
 // number 
 // bigint
 // string =>"" or '' but prefer ""

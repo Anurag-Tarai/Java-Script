@@ -1,7 +1,39 @@
-let score = 33
+
+//conversion to number
+let score = "33"
 
 console.log(typeof score);
+console.log(typeof (score));//both syntax are same
 
-let num = "33"
+let valueInNumber = Number (score) // syntax to convert into number
+console.log(typeof valueInNumber); 
 
-console.log(typeof score);
+console.log(valueInNumber); 
+
+
+//what is the value after conversion to number
+//"33"==> 33
+// "33ad" ==> NaN
+// true ==>1 ; false ==>0
+//null ==>0
+//undified ==>NaN
+
+// converion to boolean
+let isLoggedIn = true
+ 
+let booleanIsloggedin = Boolean(isLoggedIn)
+
+console.log(typeof booleanIsloggedin);
+console.log( booleanIsloggedin);
+
+// 1 ==> true ; 0 ==> false
+// "" ==> false
+// "hitesh" ==> true
+
+//conversion to string
+let numb = true
+
+let stringNumb = String (numb)
+
+console.log(typeof stringNumb);
+console.log(stringNumb);
