@@ -1,8 +1,8 @@
 const accountId = 144553
 let accountEmail = "anurag4848@gamil.com"
 var accountPassword = "1234"
-accountCity = "jaipur"
-
+accountCity = "jaipur" // Js is a dynamic typed language,variable not have fixed data type.
+console.log(accountCity);
 // accountId = 2 // this is not allowed
 
 accountEmail = "hcdfkjfj@gamil.com"
