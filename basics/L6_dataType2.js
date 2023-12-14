@@ -1,5 +1,5 @@
 
-//conversion to number
+//conversion to number-------------------------------------------------
 let score = "33"
 
 console.log(typeof score);
@@ -18,22 +18,33 @@ console.log(valueInNumber);
 //null ==>0
 //undified ==>NaN
 
-// converion to boolean
-let isLoggedIn = true
- 
+// converion to boolean-------------------------------------------------
+let isLoggedIn = 445
+// before conversion
+console.log(typeof isLoggedIn);
+console.log(isLoggedIn);
+
 let booleanIsloggedin = Boolean(isLoggedIn)
 
+// after conversion
 console.log(typeof booleanIsloggedin);
 console.log( booleanIsloggedin);
 
+// what is the values aftere conversion
 // 1 ==> true ; 0 ==> false
 // "" ==> false
 // "hitesh" ==> true
+// 76 ==> true
 
-//conversion to string
-let numb = true
+//conversion to string---------------------------------------------------
+let numb = 87987687
+
+// before conversion
+console.log(typeof numb);
+console.log(numb);
 
 let stringNumb = String (numb)
 
+// after conversion
 console.log(typeof stringNumb);
 console.log(stringNumb);
