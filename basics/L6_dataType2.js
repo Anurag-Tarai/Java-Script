@@ -1,4 +1,6 @@
-
+let var2 ;
+console.log(typeof var2);// undefined 
+let var3 = prompt("enter your name")//why error
 //conversion to number-------------------------------------------------
 let score = "33"
 
