@@ -1,52 +1,57 @@
-let var2 ;
-console.log(typeof var2);// undefined 
-let var3 = prompt("enter your name")//why error
+// let var2 ;
+// console.log(typeof var2);// undefined ,we hvae to assign value to define its type
+// let var3 = prompt("enter your name")//why error,prompt function is typically used in a browser environment
 //conversion to number-------------------------------------------------
-let score = "33"
+// let score = "33"
 
-console.log(typeof score);
-console.log(typeof (score));//both syntax are same
+// console.log(typeof score);
+// console.log(typeof (score));//both syntax are same
 
-let valueInNumber = Number (score) // syntax to convert into number
-console.log(typeof valueInNumber); 
+// let valueInNumber = Number (score) // syntax to convert into number
+// console.log(typeof valueInNumber); 
 
-console.log(valueInNumber); 
+// console.log(valueInNumber); 
 
 
-//what is the value after conversion to number
-//"33"==> 33
-// "33ad" ==> NaN
-// true ==>1 ; false ==>0
-//null ==>0
-//undified ==>NaN
+// //what is the value after conversion to number
+// //"33"==> 33
+// // "33ad" ==> NaN
+// // true ==>1 ; false ==>0
+let var1 =true;
+let var2= Number(var1);
+console.log(var2);
+console.log(typeof var2);
 
-// converion to boolean-------------------------------------------------
-let isLoggedIn = 445
-// before conversion
-console.log(typeof isLoggedIn);
-console.log(isLoggedIn);
+// //null ==>0
+// //undified ==>NaN
 
-let booleanIsloggedin = Boolean(isLoggedIn)
+// // converion to boolean-------------------------------------------------
+// let isLoggedIn = 445
+// // before conversion
+// console.log(typeof isLoggedIn);
+// console.log(isLoggedIn);
 
-// after conversion
-console.log(typeof booleanIsloggedin);
-console.log( booleanIsloggedin);
+// let booleanIsloggedin = Boolean(isLoggedIn)
 
-// what is the values aftere conversion
-// 1 ==> true ; 0 ==> false
-// "" ==> false
-// "hitesh" ==> true
-// 76 ==> true
+// // after conversion
+// console.log(typeof booleanIsloggedin);
+// console.log( booleanIsloggedin);
 
-//conversion to string---------------------------------------------------
-let numb = 87987687
+// // what is the values aftere conversion
+// // 1 ==> true ; 0 ==> false
+// // "" ==> false
+// // "hitesh" ==> true
+// // 76 ==> true
 
-// before conversion
-console.log(typeof numb);
-console.log(numb);
+// //conversion to string---------------------------------------------------
+// let numb = 87987687
 
-let stringNumb = String (numb)
+// // before conversion
+// console.log(typeof numb);
+// console.log(numb);
 
-// after conversion
-console.log(typeof stringNumb);
-console.log(stringNumb);
+// let stringNumb = String (numb)
+
+// // after conversion
+// console.log(typeof stringNumb);
+// console.log(stringNumb);
