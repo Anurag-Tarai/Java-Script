@@ -9,18 +9,18 @@
 // 7 types: string, number, boolean, null, undefined, symbol, bigint
 
 /***********Symbol************/
-// const id = Symbol('123');// symbol
-// const id2 = Symbol('123');// Symbol(123)
-// console.log(typeof id);
-// console.log(id);
+// const id = Symbol('123');
+// const id2 = Symbol('123');
+// console.log(typeof id);// symbol
+// console.log(id);// Symbol(123)
 
 // console.log(id == id2);//false
 // console.log(id === id2);//false
 
 /************BigINt***********/                                                                                                                                                                                                               
-const BigNumber = 3434355555555553n // n at the end
-console.log(typeof BigNumber); // bigint
-console.log(BigNumber); // 3434355555555553n
+// const BigNumber = 3434355555555553n // n at the end
+// console.log(typeof BigNumber); // bigint
+// console.log(BigNumber); // 3434355555555553n
 
 //----------------------------------- REFERENCE TYPE (NON PRIMITIVE)---------------------------------------------//
 
@@ -51,7 +51,22 @@ console.log(BigNumber); // 3434355555555553n
 /* NOTE : js is Dynamically typed language */
 // ecma scrip/mdn :--what typeof operator results for different data type
 
+// assignement write all what typeof all data type and send a comment to code aur chai channel
 
+/*********RESULT OF typeof OPERATOR*********
+1.PRIMITIVE
+Number :-  number
+String :- string
+Boolean :- boolean
+Bigint :- bigint
+Undefined :- undefined
+Null :- object
+Symbol :- symbol
 
+2.RFERENCE TYPE ( NON PRIMITIVE )
+Array :- object
+Function :- function(object)
+Object :- object
 
+*/
 
