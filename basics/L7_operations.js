@@ -9,7 +9,7 @@ let negNum = -num
 
 /************************* OPERATIONS *****************************/
 
-//console.log(5+5);
+// console.log(5+5);
 // console.log(5**6); // 5 to the power 6
 // console.log(8%5);
 
@@ -19,11 +19,12 @@ let negNum = -num
 // let var2 = " Tarai"
 
 // let var3 = var1 + var2
-
+// console.log(var1+var2);
 // console.log(var3);
 
 /*------------- complex situation ---------------*/
 
+//simple----------------------------------
 // console.log("5"+5);
 // console.log(5 +"6");
 
@@ -49,6 +50,6 @@ let negNum = -num
 
 /*---------postfix ans prefix operator diff----------*/
 // go to read --> prefix and postfix js mdn
-// let gameCounter = 100
-// ++gameCounter;
-// console.log(gameCounter);
+let gameCounter = 100
+++gameCounter;
+console.log(gameCounter);
