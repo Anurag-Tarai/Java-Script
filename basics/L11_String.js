@@ -7,7 +7,7 @@
 // console.log(`${name}${repoCount}${'tarai'}`);// use of back ticks and place holder// string interpolation
 // console.log(`name is ${name} and repo count is ${repoCount}`);// more readable, reliable
 
-// const gameName = new String('pubg')// another way to declare string 
+// const gameName = new String('pubg')// another way to declare string --------------------------------------
 
 // console.log(typeof gameName);// object
 

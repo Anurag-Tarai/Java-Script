@@ -1,6 +1,3 @@
-let number = 5;        // This is an integer
-
-
-let result = String(number);
-console.log(result);
-console.log(typeof result);  // Output: 7.5
+let A = 50;
+let name = 'anurag';
+console.log(`the mark of ${name} is ${A}`);
