@@ -1,44 +1,54 @@
 /*----------------NUMBERS--------------*/
 
-const score = 400// Emplicitly declared
+const score = 400// implicitly declared
 // console.log(score);// ?
 
 const balance = new Number(100)// Explicitly declared
 // console.log(balance);// ?
 
-/* ======= prototype and methods/properties of NUMBER =======*/
+// methods of NUMBER--------------------
+// go see in the console all methods of number y copying above code in console
+// const otherNumber = 100
+// console.log(otherNumber.toString().length);
 
-// console.log(balance.toString()); // does not change the original value stack and heap memory
-// console.log(typeof balance.toString());
-// console.log(typeof balance);
-// console.log(balance + 100 + 100);
+// const balance = 100.1523
+// console.log(balance.toFixed(2));// 100.15
+// console.log(balance.toPrecision(4));// 100.2
+// console.log(balance.toPrecision(2));// 1.0e+2
 
-// console.log(balance.toFixed(2)); // 100.00
+// const hundreds = 10000000
+// console.log(hundreds.toLocaleString('en-US')); // 10,000,000 -IN for indian 
+  
+//------------------MAHTS--------------
+// console.log(Math);// only type Math in console of web you will get all methods 
 
-const otherNumber = 123.8966
-// console.log(otherNumber.toPrecision(4));
-// console.log(otherNumber.toPrecision(3));
-// console.log(otherNumber.toPrecision(2));
+// console.log(Math.abs(-4));// 4  
 
-const hundreds = 10000000
-// console.log(hundreds.toLocaleString('en-IN'));
+// console.log(Math.round(23.54));// 24
+// console.log(Math.round(23.14));// 23
 
-/*-------------------------MATHS-----------------------*/
+// console.log(Math.ceil(23.24));// 24
 
-console.log(Math); // Object [Math] {} // go to cosole of web page to see the all proterties/method of Math in detail 
-// console.log(Math.abs(-4));
-// console.log(Math.round(4.2));
-// console.log(Math.ceil(4.2));
-// console.log(Math.floor(4.6));
-// console.log(Math.min(4,8,2,5));
-// console.log(Math.max(4,8,2,5));
+// console.log(Math.floor(23.24));// 23
+
+// console.log(Math.min(3,56,43,5,41,0));// 0
+// console.log(Math.max(3,56,43,5,41,0));// 56
+
+// console.log(Math.random());// give random values from 0 to 1
+// console.log((Math.random()*10)+1);
 
 
-console.log(Math.random());// give values in between (0,1)
-console.log((Math.random()*10)+1);
-console.log(Math.floor(Math.random()*10)+1);
+//----------IMPORTANT---------------
+// for(i=0;i<10;i++)
+// {const min = 10
+// const  max = 20
+// console.log(Math.floor(Math.random()*(max-min+1))+ min)}
 
-const min = 10;
-const max = 20;
+// *(max-min+1) give numbers from 0 to (max-min+1) whch is the range of min to max and adding min ensure that number will start with min and max can be min + (max-min) 
 
-console.log(Math.floor(Math.random()*(max-min+1))+min); // what is this ?
+// example
+// for(let i = 0;i<10;i++){
+// console.log(Math.floor(Math.random()*100+1));
+// }
+
+ 
