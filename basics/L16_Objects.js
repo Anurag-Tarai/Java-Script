@@ -1,9 +1,9 @@
- // singleton
- // object.create
+ //  In JavaScript, an object is a standalone entity, with properties and type and  a property is an association between a name (or key) and a value.
+ // two ways to create objects :  literal(non singleton) and constructor(singleton)
 
 const mySym = Symbol("key1")
 
- // object literals
+ // object literals // non singleton
  const JsUser = {
     name:"anurag",
     "full name": "anurag tarai",
