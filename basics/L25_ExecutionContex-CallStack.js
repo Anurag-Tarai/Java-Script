@@ -33,9 +33,10 @@ result2 -> undefined
 */
 
 // step 3 : Execution phase/context
-/* 
+/* for result1---------------------
 val1 <- 10
 val2 <- 5
+result1 <- 15 // after delete of below EC the value we get is stored in result1
 
 add -> create new execution context : new variable environment + Execution Thread
 and for add same Memory Creation and Execution phase will repeat.
@@ -46,6 +47,13 @@ total -> undefined
 Execution Phase/context:
 num1 -> 10
 num2 -> 5
-toatl -> 15
-
+total -> 15
+G.E.C <- total
+Delete this Execution Context
 */
+/* for result2-------------
+same will repeat////
+ */
+/*----------------------------------------------------------------------------*/
+// Call Stack ---------
+/* go to source of web page and there you can create snippet : check call stack,Dom break points,global listener,Event Listener breakpoints,.. */
