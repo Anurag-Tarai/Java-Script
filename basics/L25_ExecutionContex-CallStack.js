@@ -1,7 +1,7 @@
 
 /* Basics :
 -Execution Contex : An execution context is an abstract concept that includes all the necessary information to execute a piece of code, it consist of -variable environment,-Lexical Environment,-This binding
->global ec, function ec,eval ec
+>global ec, function ec, eval ec
 
 -Call Stack : The call stack is a data structure used to manage the execution context of JavaScript code. It follows the Last In, First Out (LIFO) principle, meaning the last function added to the stack is the first one to be executed.
 */
@@ -55,5 +55,17 @@ Delete this Execution Context
 same will repeat////
  */
 /*----------------------------------------------------------------------------*/
-// Call Stack ---------
+// -----Call Stack ---------
+/*
+   |                |
+   ------------------
+   |                |
+   ------------------
+   |                |
+   ------------------
+   | Global E.C.    |
+   ------------------
+// During the execution of the any block of Js code the first Global Execution Context will enter the call stack.
+
+*/
 /* go to source of web page and there you can create snippet : check call stack,Dom break points,global listener,Event Listener breakpoints,.. */
