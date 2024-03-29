@@ -42,7 +42,16 @@ console.log("arr:",arr);//arr: [ 1, 2, 35, 6, 56, 3 ]
 const arrSplice = arr.splice(2,5)
 console.log("Splice:",arrSplice);//Splice: [ 35, 6, 56, 3 ]
 console.log("arr:",arr);//arr: [ 1, 2 ]
+/**
+ * slice(startIndex, endIndex) method:
+It returns a new array containing elements from the original array starting from the startIndex up to, but not including, the endIndex.
+The original array remains unchanged.
+In your code, arr.slice(2,5) returns a new array [35, 6, 56] without modifying the original arr.
 
-
+splice(startIndex, deleteCount) method:
+It changes the original array by removing elements starting from the startIndex and continuing for deleteCount elements.
+The splice() method also returns an array containing the removed elements.
+In your code, arr.splice(2, 5) removes elements starting from index 2 up to 5 elements (including index 2 but not including index 5), which results in the array [35, 6, 56, 3] being removed from arr, leaving it as [1, 2].
+ */
 
 

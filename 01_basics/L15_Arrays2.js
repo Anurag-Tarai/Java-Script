@@ -1,3 +1,7 @@
+//**----------------------------REST AND SPREAD OPETATOR-------------------------- */
+/**Rest (...) is used to gather elements or properties into a single entity (array or object).
+Spread (...) is used to spread elements or properties from an entity into separate parts (individual elements or properties). */
+
 // const marvel_heros = ['thor','ironman','captain']
 // const dc_heros = ['batman','superman','flash']
 
