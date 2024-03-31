@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to create a new element in DOM</title>
+</head>
+<body style="background-color: #212121; color: aliceblue; font-size: 40px;">
+    <div class="parent">
+        <div class="day">mon</div>
+        <div class="day">tue</div>
+        <div class="day">wed</div>
+        <div class="day">thu</div>
+        <div class="day">fri</div>
+    </div>
+    <script>
+        const parent = document.querySelector(".parent")
+
+        console.log(parent);// div.parent
+
+        console.log(parent.children);// HTMLCollection(5) [div.day, div.day, div.day, div.day, div.day]
+
+        for (let i = 0; i < parent.children.length; i++) {
+            const element = parent.children[i];
+            console.log(element.innerText);
+        }/*mon
+           tue
+           wed
+           thu
+           fri*/
+     console.log('//---------------------------------------------');
+      console.log(parent.firstElementChild.innerText);// mon
+      console.log(parent.lastElementChild.innerText); // fri
+
+      // from child to parent-----------------------
+      const dayOne = document.querySelector(".day")
+      console.log(dayOne);
+      console.log(dayOne.parentElement); // select parent of dayOne
+      console.log(dayOne.nextElementSibling);// select next sibling element
+      console.log('//-----------------------------------------------');
+     console.log("Nodes :", parent.childNodes);// total 11 nodes, each line break is also a text node(only one)
+    </script>
+</body>
+</html>
