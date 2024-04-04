@@ -1,7 +1,7 @@
 // -- -- -- -- -- -- --DATES-- -- -- -- -- -- --
 
-// let myDate = new Date()
-
+let myDate = new Date()
+console.log(myDate.toLocaleTimeString());
 // console.log(myDate);// 2024-02-16T15:29:46.096Z
 // console.log(myDate.toString());// Fri Feb 16 2024 21:01:20 GMT+0530 (India Standard Time)
 // console.log(myDate.toDateString());//Fri Feb 16 2024
@@ -11,8 +11,8 @@
 // console.log(myDate.toTimeString());// 21:04:44 GMT+0530 (India Standard Time)
 // console.log(myDate.toLocaleString());//16/2/2024, 9:09:56 pm   
 
-// // typeof date---------------
-// console.log(typeof(myDate));// object
+// // typeof date-------------------
+// console.log(typeof(myDate)); // object
 
 // let CreateDate = new Date(2024,2,12)
 // // months start from 0 in java sript
