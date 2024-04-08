@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>// onclick="alert('owl')" don't event this way because this is not feasible approach
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+   <script>
+            // document.getElementById('owl').onclick = function(){
+            //     alert("owl clicked")
+            // }// this approach is also not good
+
+            /*NOTE : 
+Using inline event handlers or direct assignment of event handlers like onclick="alert('owl')" or document.getElementById('owl').onclick = function(){ alert("owl clicked") } is not the best approach because it mixes concerns, limits functionality, reduces readability, violates the principle of unobtrusive JavaScript, lacks flexibility, and may impact performance. Instead, using event listeners (addEventListener) separates concerns, improves maintainability, enhances flexibility, and promotes better performance.
+
+addEventListener is also provide more feature like :
+*/          
+     /*----------event listener----------*/
+    // here the third arg is not written mean false
+
+    // document.getElementById('owl').addEventListener("click",function(){
+    //     alert('owl clicked again')
+    // },false)
+
+    // attachEvent()
+    // jQuery - on
+//-------------------------------------------------------------------------------------------
+    /*--------event object---------*/
+    // document.getElementById('owl').addEventListener("click",function(e){
+    //     console.log(e)
+    // },false)
+
+    /* ---------------what need to study-------------------*/
+    // types of event
+    // timestamp
+    // preventDfault : stop default behaviour of anything
+    // target
+    // toElement
+    // srcElement
+    // currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+    // -----------------------------------------------------------------------------------
+    /*---------------Event propagation----------------*/
+    // Event propagation have two context : event bubbling and event capturing
+    // More is used 'default' which is "false", it is know as "event bubbling" ; but in some scinario you have use "event capturing" 
+     
+    // document.getElementById('images').addEventListener('click',()=>{
+    //     console.log('clicked inside the ul');
+    // },false)
+    // document.getElementById('japan').addEventListener('click',(e)=>{
+    //     console.log('japan is clicked');
+    //     //e.stopPropagation()
+    // },false)
+    // bubbling - inside se outside
+    // event will activate inner to outwards
+    // if we want to stop propagation inner to outside : e.stopPrpagation() method is used 
+    //---------------------------------------------------------------------------
+    /*-----------preventDefault--------------*/
+    // document.getElementById('google').addEventListener('click',(e)=>{
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+       
+    // }) // stop default behaviour of anything
+    //-----------------------------------------------------------------------
+   // Ex : write a program when clicked remove all images 
+   document.getElementById('images').addEventListener('click',(e)=>{
+    console.log(e.target.tagName);
+    console.log(e.target.parentNode);
+    const tagName = e.target.tagName
+    if(tagName === 'IMG'){
+    console.log(e.target.id);
+    let removeIt = e.target.parentNode
+    removeIt.remove()
+    }
+   },false)
+  //removeIt.parentNode.removeChild(removeIt)
+   </script>
+</body>
+</html>
