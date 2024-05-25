@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+        <h1>Controlled SetInterval</h1>
+        <button id="Start">Start</button>
+        <button id="Stop">Stop</button>
+
+    <script>
+       
+        document.getElementById("Start").addEventListener('click',()=>{
+            console.log("clicked");
+           const value = setInterval(()=>{
+            console.log("hi",Date.now());
+        },2000)
+        document.getElementById("Stop").addEventListener('click',()=>{
+            clearInterval(value);
+        })
+        })
+        
+    </script>
+</body>
+</html>

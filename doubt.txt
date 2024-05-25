@@ -1,3 +1,15 @@
-// this 
-// arrow 
-// 
+// const a = 10; Vs const a = new Number(10)
+Ans : 
+In JavaScript,' const a = 10;' declares a constant variable 'a' with a primitive number value of 10. This means 'a' is assigned the actual numerical value 10.
+
+On the other hand, const a = new Number(10); declares a constant variable 'a' with an object value of a Number object containing the value 10. This means 'a' is assigned an instance of the Number object, which wraps the numerical value 10.
+
+
+
+
+
+
+
+
+
+const a = 10; Vs const a = new Number(10)
