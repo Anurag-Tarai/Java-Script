@@ -1,10 +1,22 @@
-setTimeout(()=>{
-    console.log("first");
-},2000)
-setTimeout(()=>{
-    console.log("second");
-}, 5000) 
-setInterval(()=>{
-    const time = new Date()
-    console.log(`time : ${time.toLocaleTimeString()}`);
-},1000)
+const input = document.getElementById("input");
+//const result = document.getElementById("result")
+
+function calculate() {
+
+  try {
+   input.value = eval(input.value) == undefined?"enter a valid input" : eval(input.value) ;
+   
+  } catch (error) {
+    input.value ="enter a valid input";
+    setTimeout(() => {
+        input.value =" ";
+    }, 2000);
+  }
+}
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "=" || e.key === "Enter") {
+    calculate()
+  }
+});
+
